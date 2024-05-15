@@ -1,17 +1,11 @@
-// import React from "react";
-// import State from "./myComponent/State";
-// import UseRef from "./myComponent/UseRef";
-// import UseEffectLearn from "./myComponent/UseEffectLearn";
-
-import Form from "./myComponent/Form";
+// import Form from "./myComponent/Form";
+import ShadcnComp from "./myComponent/ShadcnComp";
 
 const App = () => {
   return (
     <div>
-      {/* <State /> */}
-      {/* <UseRef /> */}
-      {/* <UseEffectLearn /> */}
-      <Form />
+      {/* <Form /> */}
+      <ShadcnComp />
     </div>
   );
 };
