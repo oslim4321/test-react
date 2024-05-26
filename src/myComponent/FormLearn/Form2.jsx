@@ -21,11 +21,46 @@ let inputs = [
     required: true,
     type: "password",
   },
+  {
+    name: "subject",
+    label: "Subject",
+    placeholder: "Enter a Subject",
+    required: false,
+    type: "text",
+  },
+
+  {
+    name: "message",
+    label: "Message",
+    placeholder: "Enter a Message",
+    required: false,
+    type: "textarea",
+  },
+  {
+    name: "gender",
+    label: "Gender",
+    placeholder: "Enter a Gender",
+    required: false,
+    type: "select",
+    options: [
+      {
+        label: "Male",
+        value: "male",
+      },
+      {
+        label: "Female",
+        value: "female",
+      },
+    ],
+  },
 ];
 
 const formSchema = z.object({
   email: z.string().email(),
   password: z.string().min(2),
+  subject: z.string().min(5),
+  message: z.string().max(20),
+  gender: z.any(),
 });
 
 const Form2 = () => {
